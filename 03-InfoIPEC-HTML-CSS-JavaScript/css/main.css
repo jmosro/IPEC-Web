@@ -1,0 +1,266 @@
+/**
+* @brief   Diseño de página web para la empresa InfoIPEC, se dedica a la venta y reparación de equipo informático.
+* @file    main.css
+* @author  Jesús Alberto Moscoso Agüero
+* @author  J. Mosro - jmosro.14@gmail.com
+* @date    2021-mayo-14
+* @version 1
+*/
+
+/* -----------
+Estilo General
+----------- */
+* {
+  box-sizing: border-box; /* Tamaño incluye contenido + padding + border */
+  font-family: "Prompt", sans-serif;
+  margin: 0px;
+}
+:root {
+  --color-marco: #919b54; /* Color header franja */
+  --letra-clara: #f7c95e; /* Color header letra */
+  --letra-oscura: #303320; /* Color header letra InfoIPEC, footer, etiquetaficha*/
+  --campo-fondo-incorrecto: #d35c53;
+  --campo-fondo-correcto: white;
+}
+
+/* -----------------------------------
+Estilo Color Campo Correcto/Incorrecto
+----------------------------------- */
+select.correcto {
+  color: black;
+}
+select.incorrecto {
+  color: var(--campo-fondo-incorrecto);
+}
+input.uniBien {
+  background: var(--campo-fondo-correcto);
+}
+input.uniMal {
+  background: var(--campo-fondo-incorrecto);
+}
+input.textBien {
+  background: var(--campo-fondo-correcto);
+}
+input.textMal {
+  background: var(--campo-fondo-incorrecto);
+}
+span.spanBien {
+  background-color: var(--campo-fondo-correcto);
+}
+span.spanMal {
+  background-color: var(--campo-fondo-incorrecto);
+}
+
+
+/* ----------
+Estilo Header
+---------- */
+header {
+  background-color: var(--color-marco);
+  position: fixed; /* Posición fija */
+  height: 4rem;
+  width: 100%;
+  min-width: 600px;
+}
+.header_container {
+  width: 90%;
+  margin: 1rem 0rem 0rem 2rem;
+}
+header a {
+  color: var(--letra-clara);
+  text-decoration: none;
+  padding: 0rem 1rem 0rem 1rem;
+}
+header h1 {
+  display: inline;
+  font-size: 1.5rem;
+  margin: 0rem 0rem 0rem 4rem;
+  color: var(--letra-oscura);
+}
+header li {
+  display: inline;
+  list-style: none;
+}
+nav {
+  float: right;
+  margin: 0.2rem 2rem 0rem 0rem;
+}
+.header_espacio {
+  height: 6rem; /* 4rem para el header */
+}
+
+/* ----------
+Estilo Footer
+---------- */
+html {
+  min-height: 100%;
+  position: relative;
+}
+body {
+  margin: 0;
+  margin-bottom: 40px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.footer_container {
+  width: 100%;
+}
+.footer_container p {
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  font-size: 0.85rem;
+  background-color: var(--letra-oscura);
+  color: white;
+  text-align: center;
+}
+
+/* -------------------
+Estilo Carrito Compras
+------------------- */
+#carrito_compras_contenedor {
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 30px;
+  width: 95%;
+}
+
+/* ----------------
+Estilo Carrito Menú
+---------------- */
+.carrito_menu_contenedor {
+  padding: 0rem 0rem 0rem 2rem;
+}
+
+/* --------------------
+Estilo Carrito Catálogo
+-------------------- */
+.ficha_contenedor_franja {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  margin: 1rem 1rem 1rem 1rem;
+  background-color: var(--color-marco);
+}
+.ficha_contenedor_datos {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.ficha_imagen {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 150px;
+}
+.ficha_etiqueta {
+  font-size: 16px;
+  color: var(--letra-clara);
+}
+.ficha_stock {
+  font-size: 14px;
+  color: var(--letra-oscura);
+}
+
+/* -------------------
+Estilo Carrito Factura
+------------------- */
+#carrito_factura_contenedor {
+  min-height: 200px;
+  margin: 50px 0px 200px 0px;
+}
+#tabla_total_factura {
+  margin: 0px 0px 0px 0px;
+}
+td.pro {
+  width: 300px;
+  text-align: center;
+  background: var(--letra-clara);
+}
+td.uni {
+  width: 150px;
+  text-align: center;
+  background: var(--letra-clara);
+}
+td.preUni {
+  width: 150px;
+  text-align: center;
+  background: var(--letra-clara);
+}
+td.preTotal {
+  width: 150px;
+  text-align: center;
+  background: var(--letra-clara);
+}
+tr.proCarrito {
+  text-align: center;
+}
+
+/* ----------------------------
+Estilo Carrito Datos Personales
+---------------------------- */
+#carrito_datos_personales_contenedor {
+  margin: 50px 0px 200px 0px;
+}
+#div_datos_personales0 {
+  position: relative;
+  padding: 20px 0px 0px 20px;
+  width: 440px;
+  height: 200px;
+}
+#div_datos_personales1 {
+  position: relative;
+  width: 230px;
+}
+#div_datos_personales2 {
+  position: relative;
+  top: -150px;
+  left: 280px;
+  width: 200px;
+}
+#div_domicilio {
+  position: relative;
+  padding: 0px 0px 0px 20px;
+}
+
+/* -----------------------
+Estilo Carrito Método Pago
+----------------------- */
+#carrito_metodo_pago_contenedor {
+  margin: 50px 0px 200px 0px;
+}
+#titular_cuenta {
+  position: relative;
+  margin: 20px;
+}
+#metodos_pago {
+  position: relative;
+  margin: 20px;
+}
+#div_numero_tarjeta {
+  position: relative;
+  margin: 20px;
+}
+input.logo_tarjetas {
+  position: relative;
+  bottom: 6px;
+}
+
+/* ----------------------------
+Estilo Carrito Confirmar Pedido
+---------------------------- */
+#mensaje_confirmado {
+  width: 80%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+  background-color: var(--color-marco);
+}
+#mensaje_confirmado_contenedor {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

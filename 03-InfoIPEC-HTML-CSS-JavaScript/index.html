@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<!--
+  @brief   Diseño de página web para la empresa InfoIPEC, se dedica a la venta y reparación de equipo informático.
+  @file    index.html
+  @author  Jesús Alberto Moscoso Agüero
+  @author  J. Mosro - jmosro.14@gmail.com
+  @date    2021-mayo-14
+  @version 1
+-->
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Título de página-->
+  <title>InfoIPEC - Principal</title>
+
+  <!-- Leer código CSS-->
+  <link type="text/css" rel="stylesheet" href="./css/main.css" />
+
+  <!-- Leer código javascript-->
+  <script type="text/javascript" src="./js/main.js"></script>
+
+  <!-- Estilo de tipografía -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!----------------------->
+  <!-- Sección de Header -->
+  <!----------------------->
+  <header>
+    <div class="header_container"></div>
+    <h1>InfoIPEC</h1>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./sobre_nosotros.html">Sobre nosotros</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+    </div>
+  </header>
+  <div class="header_espacio"></div>
+
+  <!-------------------------------->
+  <!-- Sección de Carrito Compras -->
+  <!-------------------------------->
+  <section class="carrito_compras">
+    <div id="carrito_compras_contenedor">
+
+      <!----------------------------->
+      <!-- Sección de Carrito Menú -->
+      <!----------------------------->
+      <div id="carrito_menu">
+        <div id="carrito_menu_contenedor">
+          <input type="button" id="boton_Catalogo" value="Catalogo" />
+          <input type="button" id="boton_Facturar" value="Calcular Factura" />
+          <input type="button" id="boton_Datos_Personales" value="Datos Personales" />
+          <input type="button" id="boton_Metodo_Pago" value="Método Pago" />
+          <input type="button" id="boton_Confirmar_Pedido" value="Confirmar Pedido" />
+          <input type="button" id="boton_Nuevo" value="Nuevo Pedido" />
+        </div>
+      </div>
+
+      <!--------------------------------->
+      <!-- Sección de Carrito Catálogo -->
+      <!--------------------------------->
+      <div id="carrito_catalogo">
+        <div id="carrito_catalogo_contenedor">
+          <div id="ficha1" name="Fichas" style="float: left"></div>
+          <div id="ficha2" name="Fichas" style="float: left"></div>
+          <div id="ficha3" name="Fichas" style="float: left"></div>
+          <div id="ficha4" name="Fichas" style="float: left"></div>
+          <div id="ficha5" name="Fichas" style="float: left"></div>
+          <div id="ficha6" name="Fichas" style="float: left"></div>
+          <div id="ficha7" name="Fichas" style="float: left"></div>
+          <div id="ficha8" name="Fichas" style="float: left"></div>
+          <div id="ficha9" name="Fichas" style="float: left"></div>
+        </div>
+      </div>
+      <div style="clear: both"></div>
+
+      <!-------------------------------->
+      <!-- Sección de Carrito Factura -->
+      <!-------------------------------->
+      <div id="carrito_factura">
+        <div id="carrito_factura_contenedor">
+          Carrito de la compra, si quiere hacer alguna modificación, aún está a tiempo.</p>
+          <table id="tabla_total_factura"></table>
+        </div>
+      </div>
+      <div style="clear: both"></div>
+
+      <!----------------------------------------->
+      <!-- Sección de Carrito Datos Personales -->
+      <!----------------------------------------->
+      <div id="carrito_datos_personales">
+        <div id="carrito_datos_personales_contenedor">
+
+          <!--Datos personales-->
+          <p><b>Introduzca sus datos personales:</b></p>
+          <div id="div_datos_personales0">
+            <div id="div_datos_personales1">
+              <label>Nombre completo:</label><br />
+              <input type="text" id="nombre_completo" value="" size="26" /><br />
+
+              <label>Cédula:</label><br />
+              <input type="text" id="cedula" value="" size="8" maxlength="9" /><br />
+
+              <label>Fecha de nacimiento:</label><br />
+              <select id="fecha_nacimiento_dia">
+                <option value="">dia</option>
+              </select>
+              <select id="fecha_nacimiento_mes">
+                <option value="">mes</option>
+                <option value="1">enero</option>
+                <option value="2">febrero</option>
+                <option value="3">marzo</option>
+                <option value="4">abril</option>
+                <option value="5">mayo</option>
+                <option value="6">junio</option>
+                <option value="7">julio</option>
+                <option value="8">agosto</option>
+                <option value="9">septiembre</option>
+                <option value="10">octubre</option>
+                <option value="11">noviembre</option>
+                <option value="12">diciembre</option>
+              </select>
+              <select id="fecha_nacimiento_anio">
+                <option value="">año</option>
+              </select><br />
+            </div>
+
+            <div id="div_datos_personales2">
+              <label>Telefono movil:</label><br />
+              <input type="text" id="movil" value="" size="8" maxlength="8" /><br />
+
+              <label>Email:</label><br />
+              <input type="text" id="email1" value="" size="25" /><br />
+
+              <label>Repita el email:</label><br />
+              <input type="text" id="email2" value="" size="25" />
+            </div>
+          </div>
+
+          <div id="div_domicilio">
+            <label>Localidad:</label>
+            <input type="text" id="localidad" value="" size="13" />
+
+            <label>Codigo Postal:</label>
+            <input type="text" id="codigoPostal" value="" size="5" maxlength="5" />
+
+            <label>Provincia:</label>
+            <select id="provincia">
+              <option value="">Provincia</option>
+              <option value="1">San José</option>
+              <option value="2">Alajuela</option>
+              <option value="3">Cartago</option>
+              <option value="4">Heredia</option>
+              <option value="5">Guanacaste</option>
+              <option value="6">Puntarenas</option>
+              <option value="7">Limón</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div style="clear: both"></div>
+
+      <!------------------------------------>
+      <!-- Sección de Carrito Método Pago -->
+      <!------------------------------------>
+      <div id="carrito_metodopago">
+        <div id="carrito_metodo_pago_contenedor">
+
+          <!-- Método de pago -->
+          <p>Introduzca los datos de la tarjeta de crédito/débito donde se cargará el cobro:</p>
+          <div id="titular_cuenta">
+            <label>Titular de la tarjeta:</label><br />
+            <input type="text" id="titular" value="" size="26" /><br />
+          </div>
+
+          <!-- Iconos tarjetas proporcionados por https://www.iconshock.com -->
+          <div id="metodos_pago" style="float: left">
+            <label><span id="texto_tipo_tarjeta" class="spanBien">Tipo de tarjeta:</span></label><br />
+            <label for="visa">
+              <input type="radio" id="visa" name="tarjetas" class="logo_tarjetas" value="Visa">
+              <img src="./resources/images/tarjeta-visa.png"></img>
+            </label>
+
+            <label for="masterCard">
+              <input type="radio" id="masterCard" name="tarjetas" class="logo_tarjetas" value="MasterCard">
+              <img src="./resources/images/tarjeta-mastercard.png"></img>
+            </label>
+
+            <label for="amex">
+              <input type="radio" id="amex" name="tarjetas" class="logo_tarjetas" value="American Express">
+              <img src="./resources/images/tarjeta-americanexpress.png"></img>
+            </label>
+
+            <label for="paypal">
+              <input type="radio" id="paypal" name="tarjetas" class="logo_tarjetas" value="Paypal">
+              <img src="./resources/images/tarjeta-paypal.png"></img>
+            </label>
+          </div>
+
+          <div id="div_numero_tarjeta" style="float: left">
+            <label>Número tarjeta y CVC:</label><br />
+            <input type="text" id="numero_tarjeta" value="" size="15" maxlength="16" />
+            <input type="text" id="cvc_tarjeta" value="" size="2" maxlength="3" /><br />
+            <select id="mes_tarjeta">
+              <option value="">mes</option>
+            </select>
+            <select id="anio_tarjeta">
+              <option value="">año</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div style="clear: both"></div>
+
+      <!----------------------------------------->
+      <!-- Sección de Carrito Confirmar Pedido -->
+      <!----------------------------------------->
+      <div id="carrito_confirmar_pedido">
+        <div id="carrito_confirmar_pedido_contenedor">
+          <div id="mensaje_confirmado">
+            <div id="mensaje_confirmado_contenedor">
+              <span>Producto Confirmado.<br>
+                Gracias por su compra, en 24 horas recibirá su pedido.
+              </span><br>
+              <img src="./resources/images/imagen-enviar.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div style="clear: both"></div>
+    </div>
+  </section>
+
+  <!----------------------->
+  <!-- Sección de Footer -->
+  <!----------------------->
+  <footer>
+    <div class="footer_container">
+      <p>
+        InfoIPEC &copy; 2021 Todos los derechos reservados.<br />
+        Diseño por: Estudiante Jesús Alberto Moscoso Agüero.
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>

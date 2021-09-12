@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<!--
+    @brief   Diseño de página web para la empresa Infotec, se dedica a la venta de software 
+    @brief   a la medida para proyectos informáticos.
+    @file    index.html
+    @author  Jesús Alberto Moscoso Agüero
+    @author  J. Mosro - jmosro.14@gmail.com
+    @date    2021-agosto-16
+    @version 1
+-->
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Página Web para la comunidad del IPEC Santo Domingo." />
+    <meta name="author" content="Jesús Alberto Moscoso Agüero" />
+
+
+    <!-- Bootstrap CSS -->
+    <link href="libs/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+   
+    <!-- Custom styles for this template -->
+    <link href="css/mi_estilo.css" rel="stylesheet" />
+
+    <title>Infotec</title>
+  </head>
+  <body>
+
+    <!----------------------->
+    <!-- Sección de Header -->
+    <!----------------------->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top navigation-color">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-0" href="#">Infotec</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end me-5" id="navbarCollapse">
+                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#filosofia">Filosofía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quehacemos">Qué hacemos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos">Productos</a>
+                        </li>         
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>                
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ubicacion">Ubicación</a>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        
+        <!-------------------------->
+        <!-- Sección de Filosofía -->
+        <!-------------------------->
+        <div class="row mb-5" id="filosofia"></div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Slide 1-->
+                <div class="carousel-item active">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <svg class="" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" class="carousel-rectcolor1"/>
+                    </svg>
+                    <div class="carousel-caption d-block">
+                        <h2 class="text-white">Bienvenidos a nuestro portal</h2>
+                        <img src="images/logo.png" class="img-fluid mx-auto d-block" width="" height="">
+                    </div>
+                </div>
+                <!-- Slide 2-->
+                <div class="carousel-item">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <svg class="" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" 
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" class="carousel-rectcolor2"/>
+                    </svg>
+                    <div class="carousel-caption d-block">
+                        <h2 class="text-white">Misión</h2>
+                        <p>Ser los mejores especialistas en crear y mantener proyectos informáticos a la medida.</p>
+                    </div>
+                </div>
+                <!-- Slide 3-->
+                <div class="carousel-item">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <svg class="" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" 
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" class="carousel-rectcolor1"/>
+                    </svg>
+                    <div class="carousel-caption d-block">
+                        <h2 class="text-white">Visión.</h2>
+                        <p>Aportar software diseñado y adaptado a las necesidades de nuestros clientes, con tendencias tecnológicas nuevas.</p>
+                    </div>
+                </div>
+                <!-- Slide 4-->
+                <div class="carousel-item">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <svg class="" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" 
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" class="carousel-rectcolor2"/>
+                    </svg>
+                    <div class="carousel-caption d-block">
+                        <h2 class="text-white">Valores.</h2>
+                        <p>Cambio continuo. Constancia. Esfuerzo. Dedicación.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!------------------------------>
+        <!-- Sección de ¿Qué hacemos? -->
+        <!------------------------------>
+        <div class="row mb-5" id="quehacemos"></div>
+        <div class="container-fluid">
+            <div class="container-fluid text-center mb-5">
+                <h2>¿A qué nos dedicamos?</h2>
+            </div>
+            <div class="container-fluid text-center">
+                <p>
+                    <b>Asesorar</b><br>Nos dedicamos a asesorar a nuestros clientes respecto al presupuesto necesario, cronogramas y la mejor tecnología de acuerdo a sus necesidades.
+                    <br>
+                    <b>Crear</b><br>Nos encargamos de levantar requisitos, adaptar y desarrollar el software que quiere nuestro cliente.
+                    <br>
+                    <b>Mantener</b><br>Mantenimiento de Software Legacy, así como hacerles mejoras o adaptar a nuevas tecnologías.
+                    <br>
+                </p>
+                <p class="mb-3">¡Somos la mejor opción!</p>
+            </div>
+        </div>
+
+        <!-------------------------->
+        <!-- Sección de Productos -->
+        <!-------------------------->
+        <div class="row mb-5" id="productos"></div>
+        <div class="container-fluid">
+
+            <div class="container-fluid text-center mb-5">
+                <h2>Nuestro software realizado a la medida</h2>
+            </div>
+            <div class="row cards mx-1 text-center justify-content-center" style="width: auto; margin: auto auto;">
+                <div class="card m-auto mb-4 col-md-6" style="width: 20rem;">
+                    <img src="images/softland.jpg" class="card-img-top" alt="Softland">
+                    <div class="card-body">
+                      <h2 class="card-title">Softland</h2>
+                      <p class="card-text">Integración de datos de una base de datos externa con Softland en el módulo de Activos Fijos.</p>
+                      <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+                <div class="card m-auto col-md-6" style="width: 20rem;">
+                    <img src="images/odoo.png" class="card-img-top" alt="Odoo Inventory">
+                    <div class="card-body">
+                      <h2 class="card-title">Odoo Inventory</h2>
+                      <p class="card-text">Adaptación del software Open Source para inventario a las necesidades del negocio..</p>
+                      <a href="#" class="btn btn-primary">Más información</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!---------------------------->
+        <!-- Sección de Contáctenos -->
+        <!---------------------------->
+        <div class="row mb-5" id="contacto"></div>
+        <div class="container-fluid ">
+            <h2 class="mb-4 text-center">Para mayor información</h2>
+            <form class="centrar">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Nombre</span>
+                    <input type="text" aria-label="Nombre" class="form-control">
+                    <span class="input-group-text">Apellidos</span>
+                    <input type="text" aria-label="Apellidos" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Teléfono</span>
+                    <input type="text" aria-label="Telefono" class="form-control">
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Correo</span>
+                    <input type="email" aria-label="Correo" class="form-control">
+                </div>
+                <div class="input-group mt-4">
+                    <span class="input-group-text" id="inputGroup-sizing-default">Mensaje</span>
+                    <textarea class="form-control" id="mensaje" name="mensaje" 
+                    placeholder="Escriba su mensaje para nosotros. Le responderemos lo más pronto posible."
+                    rows="7"></textarea>
+                </div>          
+                <button type="submit" class="btn btn-primary mt-3">Enviar mensaje</button>
+            </form>
+
+        </div>
+
+        <!-------------------------->
+        <!-- Sección de Ubicación -->
+        <!-------------------------->
+        <div class="row mb-5" id="ubicacion"></div>
+        <div class="container-fluid">
+            <div class="row align-items-center mx-sm-5">
+                <div class="col-md-7 order-md-1 centrar">
+                    <h2 class="mb-4">Nos ubicamos</h2>
+                    <p >
+                        Heredia, Santo Domingo, Residencial Quizarco.<br>
+                        IPEC Santo Domingo de Heredia, Calle 69A<br>
+                        Google: IPEC ,Santo Domingo,, C. 69A, Heredia
+                    </p>
+                    <span class="text-muted">Para más información puedes llamar a los siguientes números: (+506) 8433-1111 / (+506) 8899-1111.</span>
+                </div>
+                <div class="col-md-5 order-md-2">
+                    <img src="images/ubicacion.jpg" class="img-fluid d-block m-auto border border-5"  preserveAspectRatio="xMidYMid slice">
+                </div>
+            </div>
+
+        </div>
+    
+    </main>
+
+    <!----------------------->
+    <!-- Sección de Footer -->
+    <!----------------------->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      
+        <section class="">
+            <div class="container-fluid text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3 align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-md-4 mx-5 mx-auto">
+                        <img src="images/logo.png" class="img-fluid mx-auto d-block" width="220" height="180" preserveAspectRatio="xMidYMid slice">
+                    </div>
+        
+                    <div class="row col-md-8 align-items-start">
+                        <!-- Grid column -->
+                        <div class="col-md-6 mt-4">
+                            <p class="text-uppercase fw-bold">Productos</p>
+                            <p><a href="#filosofia" class="text-reset">Filosofía</a></p>
+                            <p><a href="#quehacemos" class="text-reset">Qué hacemos</a></p>
+                            <p><a href="#productos" class="text-reset">Productos</a></p>
+                            <p><a href="#contacto" class="text-reset">Contacto</a></p>
+                            <p><a href="#ubicacion" class="text-reset">Ubicación</a></p>
+                        </div>
+            
+                        <!-- Grid column -->
+                        <div class="col-md-6 mt-4">
+                            <p class="text-uppercase fw-bold">Contacto</p>
+                            <p><i class="text-reset"></i>IPEC, Calle 69A, Residencial Quizarco, Heredia, Santo Domingo</p>
+                            <p><i class="text-reset"></i>servicioalcliente@infotec.go.cr</p>
+                            <p><i class="text-reset"></i>(+506) 8433-1111<br>
+                            <i class="text-reset"></i>(+506) 8899-1111</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>       
+
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            Diseño por Jesús Alberto Moscoso Agüero.<br>IPEC Santo Domingo de Heredia.
+        </div>
+    </footer>
+    
+    <script src="libs/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

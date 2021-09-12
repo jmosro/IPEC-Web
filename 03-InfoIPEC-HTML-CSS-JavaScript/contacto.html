@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--
+    @brief   Diseño de página web para la empresa InfoIPEC, se dedica a la venta y reparación de equipo informático.
+    @file    contacto.html
+    @author  Jesús Alberto Moscoso Agüero
+    @author  J. Mosro - jmosro.14@gmail.com
+    @date    2021-mayo-14
+    @version 1
+-->
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Título de página-->
+    <title>InfoIPEC - Contacto</title>
+
+    <!-- Leer código CSS-->
+    <link type="text/css" rel="stylesheet" href="./css/contacto.css" />
+
+    <!-- Estilo de tipografía -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!----------------------->
+    <!-- Sección de Header -->
+    <!----------------------->
+    <header>
+        <div class="header_container"></div>
+        <h1>InfoIPEC</h1>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./sobre_nosotros.html">Sobre nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <div class="header_espacio"></div>
+
+
+    <!------------------------->
+    <!-- Sección de Contacto -->
+    <!------------------------->
+    <section class="contacto">
+        <div class="contacto_contenedor">
+            <label id="formato_etiqueta">Contacto</label><br />
+            <p>En caso de requerir contactarnos, favor completar el siguiente formulario.</p><br />
+
+            <form action="#">
+                <div class="contacto_formulario">
+                    <label for="nombres">Nombre *</label>
+                    <input type="text" id="nombres" name="nombres" placeholder="Su nombre ...">
+
+                    <label for="apellidos">Apellidos *</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Sus apellidos ...">
+
+                    <label for="correo">Correo *</label>
+                    <input type="text" id="correo" name="correo" placeholder="ejemplo@correo.com">
+
+                    <label for="pais">País *</label>
+                    <select id="pais" name="pais">
+                        <option value="costa_rica">Costa Rica</option>
+                        <option value="mexico">México</option>
+                        <option value="espanna">España</option>
+                        <option value="estados_unidos">Estados Unidos</option>
+                        <option value="alemania">Alemania</option>
+                    </select>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribir algo ..."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Enviar"><br />
+                    <label>* campo requerido</label>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+
+    <!----------------------->
+    <!-- Sección de Footer -->
+    <!----------------------->
+    <footer>
+        <div class="footer_container">
+            <p>
+                InfoIPEC &copy; 2021 Todos los derechos reservados.<br />
+                Diseño por: Estudiante Jesús Alberto Moscoso Agüero.
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

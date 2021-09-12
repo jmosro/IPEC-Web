@@ -1,0 +1,42 @@
+/**
+* @brief   Diseño de página web para la empresa Infotec, se dedica a la venta de software 
+* @brief   a la medida para proyectos informáticos.
+* @file    mi_estilo.css
+* @author  Jesús Alberto Moscoso Agüero
+* @author  J. Mosro - jmosro.14@gmail.com
+* @date    2021-agosto-16
+* @version 1
+*/
+
+/* ----------
+Estilo Global
+---------- */
+h2 {
+  color: #223446;
+}
+
+/* --------------
+Estilo Navigation
+-------------- */
+.navigation-color {
+  background-color: #304459;
+}
+
+/* ------------
+Estilo Carousel
+------------ */
+.carousel-rectcolor1 {
+  fill: #6f9ee4;
+}
+.carousel-rectcolor2 {
+  fill: #446392;
+}
+.carousel-item {
+  height: 18rem;
+}
+
+@media (max-width: 767px) {
+  .centrar {
+    text-align: center;
+  }
+}

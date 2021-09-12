@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<!--
+    @brief   Diseño de página web para la institución IPEC Santo Domingo de Heredia, para promocionar 
+    @brief   la carrera técnica de Informática en Desarrollo de Software.
+    @file    mi_estilo.css
+    @author  Jesús Alberto Moscoso Agüero
+    @author  J. Mosro - jmosro.14@gmail.com
+    @date    2021-julio-26
+    @version 1
+-->
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Página Web para la comunidad del IPEC Santo Domingo." />
+    <meta name="author" content="Jesús Alberto Moscoso Agüero" />
+
+
+    <!-- Bootstrap CSS -->
+    <link href="libs/bootstrap-5.0.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+   
+    <!-- Custom styles for this template -->
+    <link href="css/mi_estilo.css" rel="stylesheet" />
+
+    <title>IPEC Santo Domingo de Heredia</title>
+  </head>
+  <body>
+
+    <!----------------------->
+    <!-- Sección de Header -->
+    <!----------------------->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top navigation-color">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-0" href="#">IPEC Santo Domingo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end me-5" id="navbarCollapse">
+                     <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#noticias">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#opiniones">Opiniones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#ofertaacademica">Plan de Estudios</a>
+                        </li>                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!------------------------->
+        <!-- Sección de Noticias -->
+        <!------------------------->
+        <div class="row mb-5" id="noticias"></div>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <!-- Slide 1-->
+                <div class="carousel-item active">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <svg class="" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+                     aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" class="carousel-rectcolor1"/>
+                    </svg>
+                    <div class="carousel-caption d-block">
+                        <h2 class="text-white">Temporada de lluvias.</h2>
+                        <p>Se recomienda a los estudiantes estar preparados para las lluvias, reportar a los comités de emergencias cualquier situación que amerite.</p>
+                    </div>
+                </div>
+                <!-- Slide 2-->
+                <div class="carousel-item">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <svg class="" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" 
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" class="carousel-rectcolor2"/>
+                    </svg>
+                    <div class="carousel-caption d-block">
+                        <h2 class="text-white">Comedor gratis.</h2>
+                        <p>Se invita a celebrar la Anexión de Guanacaste, el próximo martes 27 de julio, con un almuerzo o cena gratuita para toda la comunidad.</p>
+                    </div>
+                </div>
+                <!-- Slide 3-->
+                <div class="carousel-item">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <svg class="" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" 
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" class="carousel-rectcolor1"/>
+                    </svg>
+                    <div class="carousel-caption d-block">
+                        <h2 class="text-white">Entrega de títulos.</h2>
+                        <p>La secretaria del IPEC se encuentra en entrega de títulos, para los estudiantes que finalizaron algún curso libre.</p>
+                    </div>
+                </div>
+                <!-- Slide 4-->
+                <div class="carousel-item">
+                    <!-- <img src="..." class="d-block w-100" alt="..."> -->
+                    <svg class="" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" 
+                    aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" class="carousel-rectcolor2"/>
+                    </svg>
+                    <div class="carousel-caption d-block">
+                        <h2 class="text-white">Permiso para restricción vehicular.</h2>
+                        <p>Se les recuerda a estudiantes y profesores, pedir con anticipación la carta de permiso para restricción vehicular, el trámite en secretaria tarda 7 días.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!------------------------------------>
+        <!-- Sección de Opiniones Comunidad -->
+        <!------------------------------------>
+        <div class="row mb-5" id="opiniones"></div>
+        <div class="container-fluid">
+            <hr class="my-5">
+            <div class="container-fluid text-center">
+                <h2>Nuestros estudiantes opinan</h2>
+            </div>
+            <div class="row justify-content-center mx-1 text-center">
+                <div class="col-lg-4 col-md-6 my-2">
+                    <img src="images/opinion_susan_oviedo.jpg" class="rounded-circle" width="140" height="140">
+                    <h2>Susan Oviedo</h2>
+                    <p>IPEC representa nuevas oportunidades, apertura de puertas tanto en empleo como de crecimiento personal, para mí y mi familia.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 my-2">
+                    <img src="images/opinion_yendry_noguera.jpg" class="rounded-circle" width="140" height="140">
+                    <h2>Yendry Noguera</h2>
+                    <p>Mi meta es sacar el quinto año, para ser ejemplo de otras personas adultas. Y así, se animen de sacar el colegio.</p>
+                </div>
+                <div class="col-lg-4 col-md-6 my-2">
+                    <img src="images/opinion_jesus_moscoso.jpg" class="rounded-circle" width="140" height="140">
+                    <h2>Jesús Moscoso</h2>
+                    <p>IPEC para mi es un lugar donde puedo continuar con temas de computación, además he participado de actividades como Hackathon y campamentos. Definitivo debe vivirse.</p>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------------->
+        <!-- Sección de Oferta Académica -->
+        <!--------------------------------->
+        <div class="row mb-5" id="ofertaacademica"></div>
+        <div class="container-fluid">
+            <hr class="my-5">
+            <div class="text-center">
+                <h2>Información sobre la carrera Informática en Desarrollo de Software</h2>
+            </div>
+            <hr class="my-5">
+
+            <!-- Requisitos de primer ingreso -->
+            <div class="row align-items-center ofertaacademica-centrar mx-sm-5">
+                <div class="col-md-7 order-md-1">
+                    <h2 class="mb-4">Requisitos de primer ingreso.</h2>
+                    <p>
+                        1. Original y copia de documento de Identificación.<br>
+                        2. Dos fotocopias tamaño pasaporte.<br>
+                        3. Original y copia del título de bachillerato, general básicas, certificación de la conclusión de la educación diversificada según sea el caso.<br>
+                        4. Póliza de seguro estudiantil.<br>
+                        5. El único pago que debes realizar es el de la matrícula y la póliza.<br>
+                        6. No se paga mensualidades.
+                    </p>
+                    <span class="text-muted">Para más información puedes llamar a los siguientes números: 84333194 – 88910674.</span>
+                </div>
+                <div class="col-md-5 order-md-2">
+                    <img src="images/logo_ipec_mep.jpg" class="img-fluid d-block m-auto"  preserveAspectRatio="xMidYMid slice">
+                </div>
+            </div>
+            
+            <!-- Programa de estudio 2 años-->
+            <hr class="my-5">
+            <div class="row align-items-center ofertaacademica-centrar mx-sm-5">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="mb-4">Programa de estudio. <span class="text-muted">2 años.</span></h2>
+                    <p>
+                        Plan diurno/2 años: 8 a.m. a 5 p.m.<br>
+                        Días de matrícula.<br>
+                        Estudiante nuevo ingreso: 7 y 8 de diciembre.<br>
+                        Estudiante regulares: 16 de diciembre.<br>
+                        Horario de matrícula: 8 a.m. a 8 p.m.
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="images/plan_2annios.jpg" class="img-fluid d-block m-auto"  preserveAspectRatio="xMidYMid slice">
+                </div>
+            </div>
+        
+            <!-- Programa de estudio 3 años -->
+            <hr class="my-5">
+            <div class="row align-items-center ofertaacademica-centrar mx-sm-5">
+                <div class="col-md-7 order-md-2">
+                    <h2 class="mb-4">Programa de estudio. <span class="text-muted">3 años.</span></h2>
+                    <p>
+                        Plan diurno/3 años: 8 a.m. a 1:40 p.m.<br>
+                        Plan nocturno/3 años: 6 p.m. a 9:55 p.m.<br>
+                        Días de matrícula.<br>
+                        Estudiante nuevo ingreso: 7 y 8 de diciembre.<br>
+                        Estudiante regulares: 16 de diciembre.<br>
+                        Horario de matrícula: 8 a.m. a 8 p.m.
+                    </p>
+                </div>
+                <div class="col-md-5 order-md-1">
+                    <img src="images/plan_3annios.jpg" class="img-fluid d-block m-auto"  preserveAspectRatio="xMidYMid slice">
+                </div>
+            </div>
+            <hr class="my-5">
+        </div>
+    
+    </main>
+
+    <!----------------------->
+    <!-- Sección de Footer -->
+    <!----------------------->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      
+        <section class="">
+            <div class="container-fluid text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3 align-items-center">
+                    <!-- Grid column -->
+                    <div class="col-md-4">
+                        <img src="images/logo_ipec.png" class="img-fluid mx-auto d-block" width="120" height="120" preserveAspectRatio="xMidYMid slice">
+                    </div>
+        
+                    <div class="row col-md-8 align-items-start">
+                        <!-- Grid column -->
+                        <div class="col-md-6 mt-4">
+                            <p class="text-uppercase fw-bold">Productos</p>
+                            <p><a href="#noticias" class="text-reset">Noticias</a></p>
+                            <p><a href="#opiniones" class="text-reset">Opiniones</a></p>
+                            <p><a href="#ofertaacademica" class="text-reset">Plan de Estudios</a></p>
+                        </div>
+            
+                        <!-- Grid column -->
+                        <div class="col-md-6 mt-4">
+                            <p class="text-uppercase fw-bold">Contacto</p>
+                            <p><i class="text-reset"></i>IPEC, Calle 69A, Residencial Quizarco, Heredia, Santo Domingo</p>
+                            <p><i class="text-reset"></i>ipec.santodomingocentro@mep.go.cr</p>
+                            <p><i class="text-reset"></i>+506 2244-2343</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>       
+
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            Diseño por Jesús Alberto Moscoso Agüero.<br> IPEC Santo Domingo de Heredia.
+        </div>
+    </footer>
+    
+    <script src="libs/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
